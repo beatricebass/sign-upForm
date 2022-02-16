@@ -6,14 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agri-Grow Sign-Up Form</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
 </head>
 <body>
 
   <div class="sidebar">
     <div class="logo">
-    <p>Agri-Grow</p></div>
-    <div class="credit">Photo by <a href="https://unsplash.com/@unstable_affliction?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Bandura</a> on <a href="https://unsplash.com/s/photos/agriculture-birds-eye-view?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      <img src="images/corn.png" alt="corn icon" style="height: 8vh;">
+    <p>Agri-Grow</p>
+  </div>
+    <div class="credit"><p>Photo by:</p><a href="https://unsplash.com/@unstable_affliction?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivan Bandura</a><p>on</p><a href="https://unsplash.com/s/photos/agriculture-birds-eye-view?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><p>And Icon created by <a href="https://www.flaticon.com/free-icons/corn" title="corn icons">Freepik - Flaticon</a></p>
     </div>
   </div>
 
@@ -33,7 +38,7 @@
       </div>
       <div class="input">
       <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name">
+      <input type="text" id="last-name" name="last-name" class="focus">
       </div>
       <div class="input">
       <label for="phone-numer">Phone Number</label>
@@ -45,11 +50,11 @@
       </div>
       <div class="input">
       <label for="password">Password</label>
-      <input type="password" id="password" name="password">
+      <input type="password" id="password" name="password" class="error">
       </div>
       <div class="input">
       <label for="confirmation">Confirm password</label>
-      <input type="password" id="confirmation">
+      <input type="password" id="confirmation" class="error">
       </div>
     </form>
   </div>

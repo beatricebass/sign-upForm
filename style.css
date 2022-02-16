@@ -31,10 +31,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(247, 247, 247);
-  color: rgb(99, 99, 99);
+  color: rgb(100, 100, 100);
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -58,15 +58,30 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3em;
   position: relative;
   top: 20vh;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .credit {
-  padding: 4px;
+  display: flex;
+  justify-content: center;
   font-size:0.7rem;
+  padding: 3px 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+
+
+a:visited {
+  color: #FFFFFF;
 }
 
 .main {
@@ -125,6 +140,16 @@ input {
 label {
   text-transform: uppercase;
   font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.focus {
+  border: 1px solid rgb(24, 4, 197);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+  border:1px solid rgb(197, 2, 2);
 }
 
 button {
